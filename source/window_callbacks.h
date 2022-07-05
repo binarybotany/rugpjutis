@@ -5,12 +5,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/**
- * @brief Callback called by GLFW on error.
- * 
- * @param error         An error code.
- * @param description   The error message.
- */
 static void 
 window_error_callback(int error, const char *description)
 {
@@ -18,15 +12,6 @@ window_error_callback(int error, const char *description)
     exit(EXIT_FAILURE);
 }
 
-/**
- * @brief Callback called by GLFW on key.
- * 
- * @param window    A pointer to a GLFWwindow.
- * @param key       The key pressed.
- * @param scancode  The platform-specific scancode.
- * @param action    Whether the key is pressed, released, etc.
- * @param mods      A possible modifier key.
- */
 static void
 window_key_callback(GLFWwindow* window, 
                     int key, 
