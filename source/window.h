@@ -36,10 +36,10 @@ window_key_callback(GLFWwindow* window,
 }
 
 static void 
-window_initialize(window_data_t *window_data,
-                  GLsizei width, 
-                  GLsizei height, 
-                  GLboolean fullscreen)
+window_create(window_data_t *window_data,
+              GLsizei width, 
+              GLsizei height, 
+              GLboolean fullscreen)
 {
     int is_initialized = glfwInit();
     if (is_initialized == 0) return;
@@ -69,7 +69,7 @@ window_initialize(window_data_t *window_data,
 }
 
 static void 
-window_terminate(window_data_t *window_data)
+window_destroy(window_data_t *window_data)
 {
     glfwDestroyWindow(window_data->window);
     glfwTerminate();
