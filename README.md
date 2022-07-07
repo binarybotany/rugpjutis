@@ -2,4 +2,6 @@
 
 TODO: 
 
-- [ ] Refactor out GLFW.
+- [ ] Concurrency
+- [ ] Concurrent hashmaps
+- [ ] Concurrent ECS
